@@ -1,0 +1,205 @@
+<html>
+<head>
+  <title>JS Operators</title>
+</head>
+<body>
+
+  <h2>The += Operator</h2>
+
+<p id="demo"></p>
+
+<script>
+var x = 10;
+x += 10;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+<p>The + Operator concatenates (adds) strings.</p>
+<p id="first"></p>
+<script>
+	var txt1 = "John";
+	var txt2 = "Doe";
+	document.getElementById("first").innerHTML = txt1 + " " + txt2;
+</script>
+<p>The assignment operator += can concatenate strings.</p>
+<p id="second"></p>
+<script>
+	var txt1 = "What a very ";
+	txt1 += "nice day";
+	document.getElementById("second").innerHTML = txt1;
+</script>
+<p>Adding a number and a string, returns a string.</p>
+<p id="third"></p>
+<script>
+	var x = 5 + 5, y = "5" + 5, z = "Hello" + 5;
+	document.getElementById("third").innerHTML = 
+	x + "<br>" + y + "<br>" + z;
+</script>
+<p>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
+<p id="forth"></p>
+<script>
+	var a = 3;
+	var x = (100 + 50) * a;
+	document.getElementById("forth").innerHTML = x;
+</script>
+<p>The ++ Operator</p>
+<p id="fifth"></p>
+<script>
+	var x = 5;
+	x++;
+	var z = x;
+	document.getElementById("fifth").innerHTML = z;
+</script>
+<p>The -- Operator</p>
+<p id="sixth"></p>
+<script>
+	var x = 5;
+	x--;
+	var z = x;
+	document.getElementById("sixth").innerHTML = z;
+</script>
+<p>Strings are written with quotes. You can use a single or double quotes:</p>
+<p id="seventh"></p>
+<script>
+	var carName1 = "Volvo XC60";
+	var carName2 = 'Volvo XC60';
+
+	document.getElementById("seventh").innerHTML =
+	carName1 + "<br>" +
+	carName2;
+</script>
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+<p id="eigtenth"></p>
+<script>
+	// Single quotes inside double quotes
+	var answer1 = "It's alright";   
+	// Single quotes inside double quotes
+	var answer2 = "He is called 'Johnny'";
+	// Double quotes inside single quotes
+	var answer3 = 'He is called "Johnny"';
+
+	document.getElementById("eigtenth").innerHTML =
+	answer1 + "<br>" +
+	answer2 + "<br>" +
+	answer3;
+</script>
+<p>Booleans can have two values: true or false:</p>
+<p id="ninth"></p>
+<script>
+	var x = 5;
+	var y = 5;
+	var z = 6;
+	document.getElementById("ninth").innerHTML =
+	(x == y) + "<br>" +(x == z);
+</script>
+<p>Javascript Objects</p>
+<p id="tenth"></p>
+<script>
+	var person = {
+		firstName : "John",
+		lastName : "Doe",
+		age : 50,
+		eyecolor : "blue"
+	};
+	document.getElementById("tenth").innerHTML =
+	person.firstName + " is " + person.age + " years old. ";
+</script>
+<p>The typeof operator returns the type of a variable or an expression.</p>
+<p id="one"></p>
+<script>
+	document.getElementById("one").innerHTML = 
+	typeof "" + "<br>" +
+	typeof "John" + "<br>" + typeof "John Doe";
+</script>
+<p>The typeof operator returns the type of a variable or an expression.</p>
+<p id="two"></p>
+<script>
+	document.getElementById("two").innerHTML = 
+	typeof 0 + "<br>" + typeof 314 + "<br>" + typeof 3.14 + "<br>" + typeof (3) + "<br>" + typeof (3 + 4);
+</script>
+<p>The value (and the data type) of a variable with no value is <b>undefined</b>.</p>
+<p id="three"></p>
+<script>
+	var car;
+	document.getElementById("three").innerHTML = car + "<br>" + typeof car;
+</script>
+<p>Variables can be emptied if you set the value to <b>undefined.</b></p>
+<p id="four"></p>
+<script>
+var car = "Volvo";
+car = undefined;
+document.getElementById("four").innerHTML = car + "<br>" + typeof car;
+</script>
+<p>An empty string has both a legal value and a type:</p>
+<p id="five"></p>
+<script>
+	var car = "";
+	document.getElementById("five").innerHTML = 
+	"The value is: " +
+	car + "<br>" + typeof car;
+</script>
+<p>The typeof operator returns the type of a variable or an expression.</p>
+<p id="six"></p>
+<script>
+	document.getElementById("six").innerHTML = 
+	typeof "john" + "<br>" +
+	typeof 3.14 + "<br>" +
+	typeof true + "<br>" +
+	typeof false + "<br>" +
+	typeof y;
+</script>
+<p>The typeof operator returns object for both objects, arrays, and null.</p>
+<p>The typeof operator does not return object for functions.</p>
+<p id="seven"></p>
+<script>
+	document.getElementById("seven").innerHTML =
+	typeof {name: 'john' , age:34} + "<br>" +
+	typeof [1,2,3,4] + "<br>" +
+	typeof null + "<br>" +
+	typeof function myFunc(){};
+</script>
+<p>This example calls a function which performs a calculation and returns the result:</p>
+<p id="eight"></p>
+<script>
+	var x = myFunction(4, 3);
+	document.getElementById("eight").innerHTML = x;
+
+	function myFunction(a, b) {
+		return a * b;
+	}
+</script>
+<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+<p id="nine"></p>
+<script>
+	function toCelsius(f) {
+		return (5/9) * (f-32);
+	}
+	document.getElementById("nine").innerHTML = toCelsius(77);
+</script>
+<p id="ten"></p>
+<script>
+	document.getElementById("ten").innerHTML =
+	"The temperature is " + toCelsius(77) + " Celsius";
+
+	function toCelsius(fahrenheit) {
+		return (5/9) * (fahrenheit-32);
+	}
+</script>
+<p id="eleven"></p>
+<script>
+	document.getElementById("eleven").innerHTML = 
+	"The temperature is " + toCelsius(77) + " Celsius";
+
+	function toCelsius(fahrenheit) {
+		return (5/9) * (fahrenheit-32);
+	}
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

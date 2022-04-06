@@ -1,0 +1,69 @@
+<! DOCTYPE html>
+<html>
+<body>
+	<h2>What Can JavaScript Do?</h2>
+	<p id="demo">JavaScript can change HTML content.</p>
+	<button type="button" onclick='document .getElementById(
+	"demo").innerHTML = "Hello JavaScript!"'> Click Me! </button>
+<hr>
+	<h1>What Can JavaScript Do?</h1>
+	<p>JavaScript can change HTML attribute values.</p>
+	<p>In this case JavaScript changes the values of the src (source) attribute of an image.</p>
+	<button onclick="document.getElementById('myImage').src='https://i.gifer.com/origin/4e/4eae51d689d3f611e813ea38e4e5be74_w200.webp'">Turn on the light</button>
+	<img id="myImage" src="https://i.gifer.com/origin/4e/4eae51d689d3f611e813ea38e4e5be74_w200.webp" style="width:100px">
+	<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+<hr>
+	<h3>What Can JavaScript Do?</h3>
+	<p id="first">JavaScript can change the style of an HTML element.</p>
+	<button type="button" 
+	onclick="document.getElementById('first').style.fontSize='50px'">Click Me!</button>
+<hr>
+	<h4>What Can JavaScript Do?</h4>
+	<p id="second">JavaScript can hide HTML elements.</p>
+	<button type="button"
+	onclick="document.getElementById('second').style.display ='none'">Click Me!</button>
+<hr>
+	<p id="third" style="display:none">Hello Dorcas</p>
+	<button type="button"
+	onclick="document.getElementById('third').style.display='block'">Click Me!</button>
+<hr>
+	<h5>A Web Page</h5>
+	<p id="forth">A Paragraph</p>
+	<button type="button" onclick="myFunction()">Try it</button>
+	<script>
+		function myFunction() {document.getElementById("forth").innerHTML = "Paragraph changed.";}
+	</script>
+<hr>
+	<p id="fifth">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p>(myFunction is stored in an external file called "myScript.js")</p>
+
+<script src="myScript.js"></script>
+<hr>
+<p>My First Paragragh.</p>rst
+<p id="sixth"></p>
+<script>
+	document.getElementById("sixth").innerHTML = 1000 + 2000;
+</script>
+<p>My First Paragraph</p>
+<button type="button" onclick="document.write(5+20000)"> try it</button>
+	</body>
+
+<p>My first paragraph.</p>
+
+<script>
+window.alert(5 + 6);
+</script>
+
+<h2>Activate debugging with F12</h2>
+<p> Select "Console" in the debugger menu. Then click Run again.</p>
+<script>
+	console.log(100+100);
+</script>
+
+
+
+
+</html>

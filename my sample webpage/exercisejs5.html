@@ -1,0 +1,161 @@
+<html>
+<body>
+<p id="one"></p>
+<script>
+	var x = toCelsius(77);
+	var text = "The temperature is " + x + " Celsius";
+	function toCelsius(fahrenheit) {
+		return (5/9) * (fahrenheit-32);
+	}
+	document.getElementById("one").innerHTML ="The temperature is " + x + " Celsius";
+</script>
+
+<p>OR with paragraph whose id is "one", the function above can also be written this way.</p>
+<p id="two"></p>
+<script>
+	document.getElementById("two").innerHTML =
+	"The temperature is " + toCelsius(77) + " Celsius";
+
+function toCelsius(fahrenheit) {
+	return (5/9) * (fahrenheit-32);
+}
+</script>
+<p>Outside myFunction() carName is undefined.</p>
+<p id="three"></p>
+<p id="four"></p>
+<script>
+	myFunction();
+
+	function myFunction() {
+		var carName = "Volvo";
+		document.getElementById("three").innerHTML =
+		typeof carName + " " + carName;
+	}
+	document.getElementById("four").innerHTML =
+	typeof carName;
+</script>
+<p id="five"></p>
+<script>
+	// Create an object:
+	var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+	// Display some data from the object:
+	document.getElementById("five").innerHTML = 
+	person.firstName + " is " + person.age + " years old.";
+</script>
+<p>An object method is a function definition, stored as a property value.</p>
+<p id="six"></p>
+<script>
+	// Create an object:
+	var person = {
+		firstName: "John",
+		lastName: "Doe",
+		id: 5566,
+		fullName: function() {
+			return this.firstName + " " + this.lastName;
+		}
+	};
+	// Display data from the objedt:
+	document.getElementById("six").innerHTML = person.fullName();
+</script>
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo"></p>
+<button onclick="this.innerHTML=Date()">The time is?</button>
+<p>Click the button to display the date.</p>
+<button onclick="displayDate()">The time is?</button>
+<script>
+	function displayDate() {
+		document.getElementById("demo1").innerHTML = Date();
+	}
+	</script>
+	<p id="demo1"></p>
+	<p>The escape sequence \" inserts a double quote in a string.</p>
+	<p id="seven"></p>
+	<script>
+		var x = "We are the so-called \"Vikings\" from the north.";
+		var y = "We are the so-called \'Vikings\' from the north.";
+		var z = "We are the so-called \\Vikings\\ from the north.";
+		document.getElementById("seven").innerHTML = x + "<br>" + y +"<br>" + z;
+	</script>
+	<p id="eight"></p>
+	<script>
+		var x = "We are the so-called \bVikings\b from the north.";
+		var y = "We are the so-called \fVikings\f from the north.";
+		var z = "We are the so-called \nVikings\n from the north.";
+		var a = "We are the so-called \rVikings\r from the north.";
+		var b = "We are the so-called \tVikings\t from the north.";
+		var c = "We are the so-called \vVikings\v from the north.";
+		document.getElementById("eight").innerHTML = x + "<br>" + y +"<br>" + z + "<br>" + a + "<br>" + b + "<br>" + c;
+	</script>
+	<p>The safest way to break a code line in a string is using string addition.</p>
+
+<p id="nine"></p>
+
+<script>
+document.getElementById("nine").innerHTML = "Hello " +
+ "Dolly!";
+</script>
+<p id="ten"></p>
+<script>
+	var x = "John";  // x is a string
+	var y = new String("John");  // y is an object
+
+	document.getElementById("ten").innerHTML =
+	typeof x + "<br>" + typeof y;
+</script>
+<p>Strings and objects cannot be safely compared.</p>
+
+<p id="demo3"></p>
+
+<script>
+var x = "John";        // x is a string
+var y = new String("John");  // y is an object
+document.getElementById("demo3").innerHTML = (x==y);
+</script>
+<p>Strings and objects cannot be safely compared.</p>
+
+<p id="demo4"></p>
+
+<script>
+var x = "John";        // x is a string
+var y = new String("John");  // y is an object
+document.getElementById("demo4").innerHTML = (x===y);
+</script>
+<p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+<p id="demo5"></p>
+<script>
+	var str = "Please locate where 'locate' occurs!";
+	var pos = str.indexOf("locate");
+	document.getElementById("demo5").innerHTML = pos;
+</script>
+<p>The lastIndexOf() method returns the position of the last occurrence of a specified text: </p>
+<p id="demo6"></p>
+<script>
+	var str = "Please locate where 'locate' occurs!";
+	var pos = str.lastIndexOf("locate");
+	document.getElementById("demo6").innerHTML = pos;
+	</script>
+	<p>The slice() method extract a part of a string and returns the extracted parts in a new string:</p>
+	<p id="demo7"></p>
+	<script>
+		var str = "Apple, Banana, Kiwi";
+		var res = str.slice(7,13);
+		document.getElementById("demo7").innerHTML = res;
+	</script>
+	<p>The substr() method extract a part of a string and returns the extracted parts in a new string:</p>
+	<p id="demo8"></p>
+	<script>
+		var str = "Apple, Banana, Kiwi";
+		var res = str.substr(7,6);
+		document.getElementById("demo8").innerHTML = res;
+	</script>
+	
+</body>
+</html>
+
+
+
+
+
+
+

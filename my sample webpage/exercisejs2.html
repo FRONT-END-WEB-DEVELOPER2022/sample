@@ -1,0 +1,149 @@
+<html>
+<body>
+	<h2>JavaScript Statements</h2>
+	<p id="first">A <strong>JavaScript program</strong> is a list of <strong> statements</strong> to be executed by a computer.</p>
+	<script>
+		var x, y, z; //Statement 1
+		x=5; // Statement 2
+		y=6; // Statement 3
+		z= x + y + x; //Statement 4
+
+		document.getElementById("first").innerHTML =
+		"The value of z is " + z + " . ";
+	</script>
+
+	<p id="second">In HTML, JavaScript statements are executed by the browser.</p>
+	<script>
+		document.getElementById("second").innerHTML = "Hello Dorcas!!!";
+	</script>
+<p id="third">JavaScript statements are seperated by semicolons.</p>
+<script>
+	var a, b, c;
+	a= 5;
+	b= 6;
+	c= a +b + b;
+	document.getElementById("third").innerHTML = c;
+</script>
+<p id="forth">The best place to break a code line is after an operator or a comma.</p>
+<script>
+	document.getElementById("forth").innerHTML=
+	"Hello Dorcas";
+</script>
+<p>Javascript code blocks are written between { and }</p>
+<button type="button" onclilck="myFunction()">Click Me!</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+	function myFunction() {
+		document.getElementById("demo1").innerHTML = 
+		"Hello Dorcas Oyibo!!!!!";
+		document.getElementById("demo2").innerHTML = 
+		"How are you?";
+	}
+</script>
+<p>Number can be written with or without decimals.</p>
+<p id="fifth"></p>
+<p id="sixth"></p>
+<script>
+	document.getElementById("fifth").innerHTML=10.50; 
+	document.getElementById("sixth").innerHTML=1050;
+</script>
+
+<p>In this example, x is defined as a variable. Then x is assigned the value of 6:</p>
+<p id="seventh"></p>
+<script>
+	var x;
+	x = 6;
+	document.getElementById("seventh").innerHTML = x;
+</script>
+<p id="eigth">JavaScript keywords are used to identify actions to be performed.</p>
+<script>
+	var w, u;
+	w = 5 + 6; u = w * 10;
+document.getElementById("eigth").innerHTML = u;
+</script>
+<p id="ninth">try change lastName to lastname.</p>
+<script>
+	var lastname, lastName;
+	lastname = "OYIBO"; lastName = "Oyibo";
+	document.getElementById("ninth").innerHTML = "lastname";
+</script>
+<h1 id="myH"></h1>
+<p id="myP"></p>
+<script>
+	// Change heading:
+	document.getElementById("myH").innerHTML = "JavaScript Comments";
+	// Change paragraph:
+	document.getElementById("myP").innerHTML = "My First Paragraph";
+	</script>
+<p id="tenth"></p>
+<script>
+	var x = 5; // Declare x, give it the value of 5
+	var y = x + 2; // Declare y, give it the value of x + 2
+	// Write y to tenth
+	document.getElementById("tenth").innerHTML = y;
+</script>
+<h3 id="myH1"></h3>
+<p id="myP1"></p>
+<script>
+	/* 
+	The code below will change
+	the  heading with id =  "myH1"
+	and the paragraph with id = "myP1"
+	*/
+	document.getElementById("myH1").innerHTML = "JavaScript Comments";
+	document.getElementById("myP1").innerHTML = "My First Paragraph";
+</script>
+<p id="myP2"></p>
+<script>
+	/*
+	document.getElementById("myH").innerHTML = "Welcome to my Homepage";
+	document.getElementById("myP").innerHTML = "This is my first paragraph";
+	*/
+	document.getElementById("myP2").innerHTML = "The comment-block is not executed.";
+</script>
+<p id="demo"></p>
+<script>
+	var price1 = 70;
+	var price2 = 50;
+	var total = price1 + price2;
+	document.getElementById("demo").innerHTML =
+	"The total is:" + total;
+</script>
+<p>Strings are written with quotes.</p>
+<p>Numbers are written without quotes.</p>
+<p id="eleventh"></p>
+<script>
+	var pi = 3.14;
+	var person = "John Doe";
+	var answer = 'Yes I am!';
+	document.getElementById("eleventh").innerHTML = 
+	pi + "<br>" + person + "<br>" + answer;
+</script>
+<p>Create a variable, assign a value to it, and display it:</p>
+<p id="twelfth"></p>
+<script>
+	var carName = "Volvo";
+	document.getElementById("twelfth").innerHTML = carName;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
